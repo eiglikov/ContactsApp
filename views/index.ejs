@@ -43,8 +43,8 @@
         <tbody>
         <tr>
             <td><input class="form-control" ng-model="contact.name" autofocus required/></td>
-            <td><input class="form-control" ng-model="contact.email"/></td>
-            <td><input class="form-control" ng-model="contact.number"/></td>
+            <td><input type="email" class="form-control" ng-model="contact.email"/></td>
+            <td><input type="number" class="form-control" ng-model="contact.number"/></td>
             <td>
                 <button class="btn btn-primary" id="addContact" ng-hide="contact._id" ng-disabled="contacts.$error.required" ng-click="addContact()" type="submit"><i class="fa fa-plus"></i></button>
                 <button class="btn btn-info" ng-hide="contact._id == null" ng-click="update()"><i class="fa fa-refresh"></i></button>
